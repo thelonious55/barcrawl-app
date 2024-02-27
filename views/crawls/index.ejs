@@ -8,5 +8,14 @@
 <body>
     <h1>All Crawls Page</h1>
     <a href="/crawls/new"> NEW CRAWL</a>
+    <% crawlDocs.forEach(c => { %>
+        <div>crawl name
+            <%= c.name %>
+        </div>
+        <div>crawl date
+            <%= c.date %>
+        </div>
+        <a href="/crawls/<%= c._id %>">details</a>
+    <% }); %>
 </body>
 </html>
