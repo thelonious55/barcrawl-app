@@ -7,6 +7,13 @@
 </head>
 <body>
     <h1>Show page</h1>
-    
+    <form id="add-bar-form" method="POST" action="/crawls/<%= crawl._id %>/bars">
+        <label>Add Bar form:</label>
+        <input type="text" name="name" placeholder="Bar Name">
+        <input type="text" name="address" placeholder="Address">
+        <input type="submit" placeholder="Add Bar">
+
+    </form>
+    <%= crawl.bars %>
 </body>
 </html>
