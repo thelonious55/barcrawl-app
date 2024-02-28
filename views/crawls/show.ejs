@@ -6,7 +6,11 @@
     <title>Document</title>
 </head>
 <body>
+    <nav>
+        <a href="/crawls">All Crawls</a>
+    </nav>
     <h1>Show page</h1>
+    <%= crawl.name %>
     <form id="add-bar-form" method="POST" action="/crawls/<%= crawl._id %>/bars">
         <label>Add Bar form:</label>
         <input type="text" name="name" placeholder="Bar Name">
@@ -14,6 +18,11 @@
         <input type="submit" placeholder="Add Bar">
 
     </form>
-    <%= crawl.bars %>
-</body>
+    <% crawl.bars.forEach(c => { %>
+        <%= c.name %>
+        <form action="/bars/<%= c._id %>?_method=DELETE" method="POST">
+            <button type="submit">DELETE BAR</button>
+        </form>
+   <% }); %>
+    
 </html>

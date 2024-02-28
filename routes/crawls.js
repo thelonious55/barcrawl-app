@@ -11,4 +11,8 @@ router.get('/:id', crawlsCtrl.show)
 
 router.post('/', crawlsCtrl.create)
 
+router.get('/:id/edit', crawlsCtrl.edit)
+
+router.put('/:id', crawlsCtrl.update)
+
 module.exports = router

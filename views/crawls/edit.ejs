@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="/crawls">All Crawls</a>
+    </nav>
+    <h1>Edit Crawl</h1>
+        
+    </form>
+    <form action="/crawls/<%= crawl._id %>?_method=PUT" method="POST">
+        <input type="text" name="name">
+        <input type="date" name="date">
+        <button type="submit">submit changes</button>
+    </form>
+</body>
+</html>

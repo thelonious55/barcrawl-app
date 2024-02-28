@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <body>
+    <nav>
+        
+    </nav>
     <h1>All Crawls Page</h1>
     <a href="/crawls/new"> NEW CRAWL</a>
     <% crawlDocs.forEach(c => { %>
@@ -15,7 +18,11 @@
         <div>crawl date
             <%= c.date %>
         </div>
+        <div> Bars
+            <%= c.bars %>
+        </div>
         <a href="/crawls/<%= c._id %>">details</a>
+        <a href="/crawls/<%= c._id %>/edit">edit</a>
     <% }); %>
 </body>
 </html>
