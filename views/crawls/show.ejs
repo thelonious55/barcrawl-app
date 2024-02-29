@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
-    <nav>
+    <nav class="nav">
         <a href="/crawls">All Crawls</a>
     </nav>
-    <h1>Show page</h1>
     <%= crawl.name %>
     <form id="add-bar-form" method="POST" action="/crawls/<%= crawl._id %>/bars">
         <label>Add Bar form:</label>

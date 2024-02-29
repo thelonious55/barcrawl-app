@@ -19,13 +19,49 @@
   margin-top: -5px;
 }
 
-.login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 34px;
+body {
+  margin: 0;
 }
 
-.login img {
-  height: 30px;
+.nav {
+  background-color: darkgray;
+  padding: 10px; /* Add padding for better appearance */
+  display: flex;
+  justify-content: flex-end;
 }
+
+.nav a {
+  display: inline-block;
+  padding: 10px 10px; /* Adjust padding as needed */
+  margin-right: 10px; /* Add margin between buttons */
+  text-decoration: none;
+  color: black; /* Set the text color */
+  border: 1px solid white; /* Add border for button-like appearance */
+  background-color: white;
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  
+}
+
+#logout {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+.login img {
+  height: 19px;
+  float: right;
+  
+}
+
+
+body img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; 
+}
+
+
+
+

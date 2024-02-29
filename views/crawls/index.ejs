@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
-    <nav>
-        <a href="/logout">logout</a>
+    <nav class="nav">
+        <a href="/logout" class="logout">Logout</a>
+        <a href="/crawls/new" class="new-crawl"> New Crawl</a>
+        <!-- <img src="https://i.imgur.com/OIOlUJM.png" id="logo"  alt=""> -->
     </nav>
-    <h1>All Crawls Page</h1>
-    <a href="/crawls/new"> NEW CRAWL</a>
+   
     <% crawlDocs.forEach(c => { %>
-        <div>crawl name
+        <div>
             <%= c.name %>
-        </div>
-        <div>crawl date
             <%= c.date %>
+            <% c.bars.forEach(b => { %>
+                <%= b.name %>
+           <% }); %>
+           
+            <a href="/crawls/<%= c._id %>" id="button">details</a>
+            <a href="/crawls/<%= c._id %>/edit" id="button">edit</a>
         </div>
-        <div> Bars
-            <%= c.bars %>
-        </div>
-        <a href="/crawls/<%= c._id %>">details</a>
-        <a href="/crawls/<%= c._id %>/edit">edit</a>
     <% }); %>
 </body>
 </html>
