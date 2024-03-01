@@ -26,7 +26,6 @@ body {
 .nav {
   background-color: darkgray;
   padding: 10px;
-  /* Add padding for better appearance */
   display: flex;
   justify-content: flex-end;
   opacity: 0.4;
@@ -39,17 +38,17 @@ body {
 .nav a {
   display: inline-block;
   padding: 10px 10px;
-  /* Adjust padding as needed */
+  
   margin-right: 10px;
-  /* Add margin between buttons */
+  
   text-decoration: none;
   color: black;
-  /* Set the text color */
+  
   border: 1px solid white;
-  /* Add border for button-like appearance */
+  
   background-color: white;
   border-radius: 5px;
-  /* Add border-radius for rounded corners */
+  
 
 }
 
@@ -76,12 +75,12 @@ body img {
 
 .crawl-index {
   text-align: center;
-    display: block; /* Set display to block */
-    border: 2px solid #fff; /* White border */
-    padding: 10px; /* Add padding for space inside the box */
-    margin: 10px auto; /* Center the element horizontally */
-    margin-bottom: 10px; /* Add margin to separate crawl-index elements */
-    background-color: #f0f0f0; /* Optional: Add a light background color */
+    display: block; 
+    border: 2px solid #fff; 
+    padding: 10px; 
+    margin: 10px auto; 
+    margin-bottom: 10px; 
+    background-color: #f0f0f0; 
     max-width: 400px;
     opacity: 0.7;
     border-radius: 5px;
@@ -94,12 +93,12 @@ body img {
 
 .new-form {
   text-align: center;
-  display: block; /* Set display to block */
-    border: 2px solid #fff; /* White border */
-    padding: 10px; /* Add padding for space inside the box */
-    margin: 10px auto; /* Center the element horizontally */
-    margin-bottom: 10px; /* Add margin to separate crawl-index elements */
-    background-color: #f0f0f0; /* Optional: Add a light background color */
+  display: block; 
+    border: 2px solid #fff; 
+    padding: 10px; 
+    margin: 10px auto; 
+    margin-bottom: 10px; 
+    background-color: #f0f0f0; 
     max-width: 400px;
     opacity: 0.7;
     border-radius: 5px;
@@ -111,12 +110,12 @@ body img {
 
 .new-bar {
   text-align: center;
-  display: block; /* Set display to block */
-    border: 2px solid #fff; /* White border */
-    padding: 10px; /* Add padding for space inside the box */
-    margin: 10px auto; /* Center the element horizontally */
-    margin-bottom: 10px; /* Add margin to separate crawl-index elements */
-    background-color: #f0f0f0; /* Optional: Add a light background color */
+  display: block; 
+    border: 2px solid #fff; 
+    padding: 10px; 
+    margin: 10px auto; 
+    margin-bottom: 10px; 
+    background-color: #f0f0f0; 
     max-width: 400px;
     opacity: 0.7;
     border-radius: 5px;
@@ -128,12 +127,12 @@ body img {
 
 .edit-form {
   text-align: center;
-  display: block; /* Set display to block */
-    border: 2px solid #fff; /* White border */
-    padding: 10px; /* Add padding for space inside the box */
-    margin: 10px auto; /* Center the element horizontally */
-    margin-bottom: 10px; /* Add margin to separate crawl-index elements */
-    background-color: #f0f0f0; /* Optional: Add a light background color */
+  display: block; 
+    border: 2px solid #fff; 
+    padding: 10px; 
+    margin: 10px auto; 
+    margin-bottom: 10px; 
+    background-color: #f0f0f0; 
     max-width: 400px;
     opacity: 0.7;
     border-radius: 5px;
