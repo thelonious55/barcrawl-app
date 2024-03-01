@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
+    <style>
+        body {
+            background-image: url('https://i.imgur.com/54LrUKd.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            
+        }
+
+    </style>
 </head>
 <body>
     <nav class="nav">
         <a href="/crawls">All Crawls</a>
     </nav>
-    <%= crawl.name %>
+    <div class="new-bar">
+    <h3><%= crawl.name %></h3>
     <form id="add-bar-form" method="POST" action="/crawls/<%= crawl._id %>/bars">
-        <label>Add Bar form:</label>
+        <label>Add Bar:</label>
         <input type="text" name="name" placeholder="Bar Name">
         <input type="text" name="address" placeholder="Address">
         <input type="submit" placeholder="Add Bar">
@@ -24,5 +35,6 @@
             <button type="submit">DELETE BAR</button>
         </form>
    <% }); %>
-    
+</div>
+</body>
 </html>

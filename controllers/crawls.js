@@ -29,6 +29,7 @@ async function index(req, res) {
     try {
         const crawlDocumentsFromTheDB = await CrawlsModel.find({})
         console.log(crawlDocumentsFromTheDB)
+        // const stringDate = crawlDocumentsFromTheDB[0].date.toDateString()
         res.render('crawls', {crawlDocs: crawlDocumentsFromTheDB})
     } catch(err) {
         console.log(err)

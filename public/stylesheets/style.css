@@ -85,6 +85,60 @@ body img {
     max-width: 400px;
     opacity: 0.7;
     border-radius: 5px;
-    
-    
+  
+}
+
+.crawl-index:hover {
+  opacity: 1;
+}
+
+.new-form {
+  text-align: center;
+  display: block; /* Set display to block */
+    border: 2px solid #fff; /* White border */
+    padding: 10px; /* Add padding for space inside the box */
+    margin: 10px auto; /* Center the element horizontally */
+    margin-bottom: 10px; /* Add margin to separate crawl-index elements */
+    background-color: #f0f0f0; /* Optional: Add a light background color */
+    max-width: 400px;
+    opacity: 0.7;
+    border-radius: 5px;
+}
+
+.new-form:hover {
+  opacity: 1;
+}
+
+.new-bar {
+  text-align: center;
+  display: block; /* Set display to block */
+    border: 2px solid #fff; /* White border */
+    padding: 10px; /* Add padding for space inside the box */
+    margin: 10px auto; /* Center the element horizontally */
+    margin-bottom: 10px; /* Add margin to separate crawl-index elements */
+    background-color: #f0f0f0; /* Optional: Add a light background color */
+    max-width: 400px;
+    opacity: 0.7;
+    border-radius: 5px;
+}
+
+.new-bar:hover {
+  opacity: 1;
+}
+
+.edit-form {
+  text-align: center;
+  display: block; /* Set display to block */
+    border: 2px solid #fff; /* White border */
+    padding: 10px; /* Add padding for space inside the box */
+    margin: 10px auto; /* Center the element horizontally */
+    margin-bottom: 10px; /* Add margin to separate crawl-index elements */
+    background-color: #f0f0f0; /* Optional: Add a light background color */
+    max-width: 400px;
+    opacity: 0.7;
+    border-radius: 5px;
+}
+
+.edit-form:hover {
+  opacity: 1;
 }
