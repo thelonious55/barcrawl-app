@@ -2,6 +2,8 @@
 
 Web application allowing users to create and track a bar crawl. Create bar crawl with a date and name, add bars to that crawl and delete if what you want. 
 
+![alt text](https://i.imgur.com/s0q70kn.png)
+
 ## Deployment
 https://outstanding-gray-shift.cyclic.app
 
