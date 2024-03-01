@@ -1,29 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
+    <style>
+        body {
+            background-image: url('https://i.imgur.com/54LrUKd.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            
+        }
+
+    </style>
 </head>
+
 <body>
     <nav class="nav">
         <a href="/logout" class="logout">Logout</a>
         <a href="/crawls/new" class="new-crawl"> New Crawl</a>
         <!-- <img src="https://i.imgur.com/OIOlUJM.png" id="logo"  alt=""> -->
     </nav>
-   
-    <% crawlDocs.forEach(c => { %>
-        <div>
-            <%= c.name %>
-            <%= c.date %>
-            <% c.bars.forEach(b => { %>
-                <%= b.name %>
-           <% }); %>
-           
-            <a href="/crawls/<%= c._id %>" id="button">details</a>
-            <a href="/crawls/<%= c._id %>/edit" id="button">edit</a>
+
+    <% crawlDocs.forEach(c=> { %>
+        <div class="crawl-index">
+            <span class="crawl-name">
+                <h2>
+                    <%= c.name %>
+                </h2>
+            </span>
+            <span class="crawl-date">
+                <%= c.date %>
+            </span>
+            <% c.bars.forEach(b=> { %>
+                <span class="crawl-bars">
+                    <h4>
+                        <%= b.name %>
+                    </h4>
+                </span>
+                <% }); %>
+
+                    <a href="/crawls/<%= c._id %>" id="button">Add Bars</a>
+                    <a href="/crawls/<%= c._id %>/edit" id="button">Edit crawl</a>
         </div>
-    <% }); %>
+        <% }); %>
 </body>
+
 </html>

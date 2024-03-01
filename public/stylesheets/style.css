@@ -25,21 +25,32 @@ body {
 
 .nav {
   background-color: darkgray;
-  padding: 10px; /* Add padding for better appearance */
+  padding: 10px;
+  /* Add padding for better appearance */
   display: flex;
   justify-content: flex-end;
+  opacity: 0.4;
+}
+
+.nav:hover {
+  opacity: 1;
 }
 
 .nav a {
   display: inline-block;
-  padding: 10px 10px; /* Adjust padding as needed */
-  margin-right: 10px; /* Add margin between buttons */
+  padding: 10px 10px;
+  /* Adjust padding as needed */
+  margin-right: 10px;
+  /* Add margin between buttons */
   text-decoration: none;
-  color: black; /* Set the text color */
-  border: 1px solid white; /* Add border for button-like appearance */
+  color: black;
+  /* Set the text color */
+  border: 1px solid white;
+  /* Add border for button-like appearance */
   background-color: white;
-  border-radius: 5px; /* Add border-radius for rounded corners */
-  
+  border-radius: 5px;
+  /* Add border-radius for rounded corners */
+
 }
 
 #logout {
@@ -52,16 +63,28 @@ body {
 .login img {
   height: 19px;
   float: right;
-  
+
 }
 
 
 body img {
   display: block;
   margin: 0 auto;
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 
-
-
+.crawl-index {
+  text-align: center;
+    display: block; /* Set display to block */
+    border: 2px solid #fff; /* White border */
+    padding: 10px; /* Add padding for space inside the box */
+    margin: 10px auto; /* Center the element horizontally */
+    margin-bottom: 10px; /* Add margin to separate crawl-index elements */
+    background-color: #f0f0f0; /* Optional: Add a light background color */
+    max-width: 400px;
+    opacity: 0.7;
+    border-radius: 5px;
+    
+    
+}
